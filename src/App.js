@@ -15,8 +15,7 @@ function App() {
     .then(data =>setMovies(data.results))
   },[])
   return (
-    <div className="App">
-      <p>Hello App Js</p>
+    <div className="movie_container">
       {
         movies.length>0 && movies.map(movie => (<Movie key={movie.id} movie={movie}></Movie>))
       }
