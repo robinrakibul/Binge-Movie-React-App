@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 *{
@@ -11,6 +12,7 @@ body{
     margin: 0;
 }
 .movie{
+    position: relative;
     background-color: #373b69;
     border-radius: 3px;
     box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -25,6 +27,22 @@ body{
     max-width: 100%;
 }
 
-.movie-info h3{
+.movie_info h3{
     margin: 0;
+}
+
+.movie_overview{
+    background-color: white;
+    color: #22254b;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition:  transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie_overview{
+    transform: translateY(0%);
 }
