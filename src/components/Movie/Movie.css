@@ -20,7 +20,6 @@ body{
     padding: 20px;
     margin: 20px;
     width: 300px;
-    height: auto;
 }
 
 .movie_img{
@@ -36,10 +35,14 @@ body{
     color: #22254b;
     position: absolute;
     padding: 10px;
+    overflow: auto;
+    max-height: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     bottom: 0;
     right: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(102%);
     transition:  transform 0.3s ease-in-out;
 }
 
