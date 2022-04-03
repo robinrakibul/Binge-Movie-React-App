@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
 import Movie from './components/Movie/Movie';
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a7a9f509d8c20ce68bfea9beb5c502f3&page=1";
@@ -15,10 +16,13 @@ function App() {
     .then(data =>setMovies(data.results))
   },[])
   return (
-    <div className="movie_container">
-      {
-        movies.length>0 && movies.map(movie => (<Movie key={movie.id} movie={movie}></Movie>))
-      }
+    <div>
+      <Header></Header>
+      <div className="movie_container">
+        {
+          movies.length>0 && movies.map(movie => (<Movie key={movie.id} movie={movie}></Movie>))
+        }
+      </div>
     </div>
   );
 }
