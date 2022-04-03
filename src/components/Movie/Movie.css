@@ -30,6 +30,7 @@ body{
 
 .movie_info h3{
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .movie_overview{
@@ -50,4 +51,21 @@ body{
 
 .movie:hover .movie_overview{
     transform: translateY(0%);
+}
+
+.tag{
+    background-color: #22254b;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tag.green{
+    color: rgb(1, 255, 1);
+}
+.tag.orange{
+    color: rgb(255, 166, 0);
+}
+.tag.red{
+    color: rgb(255, 0, 0);
 }

@@ -26,7 +26,6 @@ const handleOnSubmit = (e) =>{
     .then(data =>setMovies(data.results));
     setSearchTerm('');
   }
-  
 }
 
 const handleOnChange = (e) =>{
