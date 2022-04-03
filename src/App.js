@@ -23,7 +23,7 @@ const handleOnSubmit = (e) =>{
   if(searchTerm){
     fetch(SEARCH_API + searchTerm)
     .then(res=> res.json())
-    .then(data =>setSearchTerm(data.results));
+    .then(data =>setMovies(data.results));
     setSearchTerm('');
   }
   
